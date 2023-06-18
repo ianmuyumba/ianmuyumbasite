@@ -1,10 +1,42 @@
-/* Apply border-box sizing to all elements */
-*, *::before, *::after {
+/* Box Model Fix */
+html {
     box-sizing: border-box;
-}
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
-    background-color: #000000;
+    background-color: #f7f6f2;
+    color: #424242;
+    font-family: 'Sen', sans-serif;
+}
 
-    /* f7f6f2 */
+
+header {
+    height: 10vh;
+    background-color: #424242;
+
+    
+}
+
+
+.hero{
+    height: 80vh;
+}
+
+
+.blog {
+    background-color: #fff;
+    height: 20vh;
+    /* Add Auto height once we fill content */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #f7f6f2;
+    height: 40vh;
 }
