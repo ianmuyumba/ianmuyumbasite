@@ -1,0 +1,10 @@
+/* Apply border-box sizing to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+
+    /* f7f6f2 */
+}
