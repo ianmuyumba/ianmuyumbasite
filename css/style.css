@@ -1,28 +1,41 @@
 /* Box Model Fix */
-html {
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
-*, *:before, *:after {
-    box-sizing: inherit;
-  }
 
+  
 body {
     background-color: #f7f6f2;
     color: #424242;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Sen', sans-serif;  
 }
 
 
 header {
-    height: 10vh;
+    height: 15vh;
     background-color: #424242;
+}
 
-    
+
+.header-margin{
+    margin: 0 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.hero-margin{
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .hero{
-    height: 80vh;
+    height: 70vh;
 }
 
 
@@ -35,6 +48,7 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+
 
 footer{
     background-color: #f7f6f2;
